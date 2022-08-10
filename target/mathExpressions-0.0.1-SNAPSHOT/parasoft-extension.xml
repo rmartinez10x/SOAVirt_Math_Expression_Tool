@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension xmlns="urn:ocm/parasoft/extensibility-framework/v1/extension"
+  type="tool" name='Math Expression Tool' description='Tool for computing Math Expressions'>
+  <class>com.mathExpressions.soavirt.tool.MathExpressions</class>
+  <tool xmlns="http://schemas.parasoft.com/extensibility-framework/v1/tool">
+    <outputs>
+      <output key="response" name="Modified Response" />
+    </outputs>
+  </tool>
+  <form xmlns="urn:com/parasoft/extensibility-framework/gui">
+    <section label="Main Settings">
+      <field id="stringToCompute" label="Enter Math Expression Below: (Following Symbols are valid:digits, * , ( , ) ,sin, cos, sinh, cosh, tan, tanh, asin, acos, atan, pi, e, sqrt, cbrt, ^, /, ln, log)" type="String" />
+    </section>
+  </form>
+</extension>
